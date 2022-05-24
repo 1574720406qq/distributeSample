@@ -1,0 +1,23 @@
+.classpath
+target/
+*.iml
+dependency-reduced-pom.xml
+# Maven
+*.ser
+*.ec
+
+# IntelliJ Idea
+.idea/
+out/
+*.ipr
+*.iws
+*.iml
+tags
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# OS X
+.DS_Store
