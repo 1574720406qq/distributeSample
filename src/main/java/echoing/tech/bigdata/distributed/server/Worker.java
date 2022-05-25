@@ -33,7 +33,7 @@ public class Worker<R> implements TaskProcessor<R>, Serializable {
 
     public void executeTask() {
         while (true) {
-            while (!tasksQueue.isEmpty()) {
+            if (!tasksQueue.isEmpty()) {
                 final Task<R> header = tasksQueue.poll();
                 final R exec = header.exec();
                 resultsQueue.offer(exec);
